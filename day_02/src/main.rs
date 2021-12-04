@@ -10,8 +10,11 @@ use itertools::Itertools;
     Day 2
 
     Problem:
-    Track Forward and Depth movements but summing each position. Finally mutltiply the forward
+    Part 1: Track Forward and Depth movements but summing each position. Finally mutltiply the forward
     and depth movements together to get the result.
+
+    Part: Use an aim variable that increases by movement on down direction; decreases on up direction, then
+    finally on foward direction the depth increases by the aim multiplied by the current movement and horozontal incrases by movement.
 */
 
 fn lines_from_file<R: Read>(io: R) -> Result<Vec<String>, Error> {
@@ -47,7 +50,7 @@ fn main() -> Result<(), Error> {
             aim -= movement;
         } else {
             panic!(
-                "Expected 'forward' or 'down' command but received {}",
+                "Expected 'forward', 'down' or 'up' command but received {}",
                 direction
             );
         }
