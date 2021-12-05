@@ -13,7 +13,7 @@ use itertools::Itertools;
     Part 1: Track Forward and Depth movements but summing each position. Finally mutltiply the forward
     and depth movements together to get the result.
 
-    Part: Use an aim variable that increases by movement on down direction; decreases on up direction, then
+    Part 2: Use an aim variable that increases by movement on down direction; decreases on up direction, then
     finally on foward direction the depth increases by the aim multiplied by the current movement and horozontal incrases by movement.
 */
 
